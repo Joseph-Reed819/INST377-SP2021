@@ -50,10 +50,8 @@ app.route('/api')
   .post(async (req, res) => {
     console.log('POST request detected');
     console.log('Form data in res.body', req.body);
-
-    const facilities = someAlgo(req.body.zipcode, dataStore);
-    console.log('data from fetch', json);
-    res.json({message: 'hello world'});
+    console.log('Now send something back to your client');
+    res.send({message: 'hello world'});
   });
 
 app.listen(port, async () => {
