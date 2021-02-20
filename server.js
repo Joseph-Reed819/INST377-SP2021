@@ -53,7 +53,7 @@ app.route('/api')
 
     const facilities = someAlgo(req.body.zipcode, dataStore);
     console.log('data from fetch', json);
-    res.json({facilities: dataStore});
+    res.json({message: 'hello world'});
   });
 
 app.listen(port, async () => {
